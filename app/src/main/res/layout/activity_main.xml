@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.subhadeep95.fabanimationtry.MainActivity">
+
+
+    <Button
+        android:text="COMPLEX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="103dp"
+        android:id="@+id/complex" />
+
+    <Button
+        android:text="ALPHA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/complex"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:id="@+id/alpha" />
+
+    <Button
+        android:text="FADE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/complex"
+        android:layout_alignLeft="@+id/complex"
+        android:layout_alignStart="@+id/complex"
+        android:layout_marginTop="49dp"
+        android:id="@+id/fade" />
+
+    <Button
+        android:text="Clockwise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fade"
+        android:layout_alignLeft="@+id/alpha"
+        android:layout_alignStart="@+id/alpha"
+        android:id="@+id/clockwise" />
+
+    <Button
+        android:text="Blink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fade"
+        android:layout_alignLeft="@+id/fade"
+        android:layout_alignStart="@+id/fade"
+        android:layout_marginTop="54dp"
+        android:id="@+id/blink" />
+
+    <Button
+        android:text="Rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/blink"
+        android:layout_alignRight="@+id/clockwise"
+        android:layout_alignEnd="@+id/clockwise"
+        android:id="@+id/rotate" />
+
+    <Button
+        android:text="Slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slide"
+        android:layout_below="@+id/blink"
+        android:layout_toRightOf="@+id/blink"
+        android:layout_toEndOf="@+id/blink"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>
